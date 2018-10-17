@@ -2,10 +2,23 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="icon/favicon.png">
-    <title>S.E.C</title>
+    <title>Vue Js Portfolio</title>
 </head>
 <script src="lib/vue.js" type="text/javascript"></script>
 <body>
-    <h1>Hello World</h1>
+    <div id="app">
+        {{ testVal }}
+    </div>
 </body>
+
+<!-- Vueインスタンス作成 -->
+<script>
+    const app = new Vue({
+        el: '#app',
+        
+        data: {
+            testVal: 'Hellow Vue World'
+        }
+    });
+</script>
 </html>
